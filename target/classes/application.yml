@@ -1,14 +1,14 @@
 spring:
-    application.name: hello-spring
+    application.name: team-project
     datasource:
         url: jdbc:oracle:thin:@localhost:1521:XE
         driver-class-name: oracle.jdbc.driver.OracleDriver
         username: SPRING_BOOT
         password: 1234
-#    mvc:
-#        view:
-#            prefix: /WEB-INF/views/
-#            suffix: .jsp
+    mvc:
+        view:
+            prefix: /WEB-INF/views/
+            suffix: .jsp
 
     servlet:
         # 파일 업로드 설정
