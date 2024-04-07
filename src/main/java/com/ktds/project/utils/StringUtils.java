@@ -55,7 +55,19 @@ public abstract class StringUtils {
 		
 		return str.trim();
 	}
-	
+
+	// 입력 받은 사원 ID 가 10글자이고 숫자인지 검사하는 패턴. (유효성 검사)
+	public final static boolean isEmpIdFormat(final String str) {
+		if (isEmpty(str)) {
+			return false;
+		}
+
+		String empIdPatteren = "[0-9]+";
+		return str.matches(empIdPatteren);
+	}
+
+
+
 	public final static boolean isEmailFormat(final String str) {
 		if (isEmpty(str)) {
 			return false;
