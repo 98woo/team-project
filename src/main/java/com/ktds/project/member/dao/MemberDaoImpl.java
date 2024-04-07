@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.ktds.project.member.vo.MemberVO;
 
+import java.util.List;
+
 public class MemberDaoImpl extends SqlSessionDaoSupport implements MemberDao{
 
 	@Autowired
@@ -19,14 +21,5 @@ public class MemberDaoImpl extends SqlSessionDaoSupport implements MemberDao{
 		return getSqlSession().selectOne(MemberDao.MDAO_SPACE + ".getMember", memberVO);
 	}
 
-	@Override
-	public MemberVO getPassword(MemberVO memberVO) {
-		return null;
-	}
-
-	@Override
-	public int getLoginTryCount(MemberVO memberVO) {
-		return 0;
-	}
 
 }

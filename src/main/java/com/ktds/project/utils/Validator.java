@@ -9,7 +9,7 @@ import java.util.Map;
 public class Validator<T> {
 
 	public enum Type {
-		NOT_EMPTY, SIZE, EMAIL, EQUALS, PASSWORD, MAX, MIN
+		NOT_EMPTY, SIZE, EMPID, EMAIL, EQUALS, PASSWORD, MAX, MIN
 	}
 
 	private T object;
@@ -63,6 +63,7 @@ public class Validator<T> {
 
 			valueMap.forEach((type, errorMessage) -> {
 				boolean result = true;
+
 				if (type == Type.NOT_EMPTY) {
 					result = !StringUtils.isEmpty(value);
 				} else if (type == Type.EMAIL) {
