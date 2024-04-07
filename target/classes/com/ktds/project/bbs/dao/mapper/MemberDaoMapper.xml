@@ -16,8 +16,8 @@
         FROM MEMBER
         WHERE EMP_ID = #{empId}
         AND PWD = #{password}
-        AND WORK_STS = 201
     </select>
+
 
 
 

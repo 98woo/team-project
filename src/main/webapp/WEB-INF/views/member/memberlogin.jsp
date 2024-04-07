@@ -5,6 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>로그인 페이지</title>
+<script type="text/javascript" src="/js/memberlogin.jsp"></script>
+	<jsp:include page="../commonheader.jsp"></jsp:include>
+
 <style type="text/css">
 
 	div{
@@ -53,7 +56,7 @@
 				<input id="password" type="password" name="password"/>
 
 				<div>
-					<button id="login-btn" >로그인</button>
+					<button type="button" id="login-btn">로그인</button>
 				</div>
 				<div>menagement는 회사 임직원 관리, 비품 관리 및 예정 프로젝트를 관리하는 프로그램입니다. 로그인후 이용하실 수 있으며 임/직원 신규 등록은 경영지원부(tel:123-1234)로 문의 부탁드립니다.</div>
 			</div>
