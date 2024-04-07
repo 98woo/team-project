@@ -3,7 +3,7 @@ $().ready(function () {
         $.post(
             "/ajax/member/login",
             {
-                email: $("#email").val(),
+                email: $("#employeeid").val(),
                 password: $("#password").val(),
                 nextUrl: $("#next").val(),
             },

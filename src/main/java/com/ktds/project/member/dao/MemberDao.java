@@ -14,6 +14,5 @@ public interface MemberDao {
 	MemberVO getMember(MemberVO memberVO);
 
 
-
-
+    MemberVO selectEmpIdAndPwd(MemberVO memberVO);
 }
