@@ -50,10 +50,10 @@
 		<div class="contents">
 			<div class="grid">
 				<label for="employeeid">사원번호</label>
-				<input id="employeeid" type="number" name="employeeid"/>
+				<input id="employeeid" type="number" name="employeeid" value="memberVO.empId"/>
 				
 				<label for="password">비밀번호</label>
-				<input id="password" type="password" name="password"/>
+				<input id="password" type="password" name="password" value="memberVO.pwd"/>
 
 				<div>
 					<button type="button" id="login-btn">로그인</button>
